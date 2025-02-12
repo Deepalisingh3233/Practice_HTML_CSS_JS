@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #080a0c;
+            color: azure;
+            height: 100vh;
+        }
+        .container{
+            height: 100vh;
+            max-width: 1320px;
+            padding: 64px 0;
+            margin: 0 auto;
+            display: grid;
+            align-items: center;
+        }
+        .grid{
+            display: grid;
+            align-items: center;
+            gap: 6.4rem;
+        }
+        .grid-two-column{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .hero-content h1{
+            text-align: left;
+            font-size: 54px;
+        }
+        .hero-content p{
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 2rem 0 4rem 0;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .hero-content a{
+            color: #080a0c;
+        }
+        .hero-content a:link{
+            background-color: #fff;
+            display: inline-block;
+            padding: 10px 32px;
+            text-transform: capitalize;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+
+        }
+        .hero-content a:visited{
+            color: #d67e03;
+        }
+        .hero-content a:hover{
+            color: #0062ff;
+        }
+        .hero-content a:active{
+            color: #f31559;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Anchor States</h2>
+    <p>link, Visited, hover, active</p> -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid grid-two-column">
+                <div class="hero-content">
+                    <h1>World Best Course</h1>
+                    <p>
+                        Unleash your web design potential with the best CSS Course on the internet! Elevate your skills, create stunning websites, and transform your career. Join us today and embark on a CSS journey like never before.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=MSICFljRcb4" target="_blank">Watch Now</a>
+                </div>
+                <div class="hero-image">
+                    <figure>
+                        <img src="../images/hero.png" alt="Headphone with black background"/>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

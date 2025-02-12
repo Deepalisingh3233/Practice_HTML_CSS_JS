@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Urbanist", serif;
+}
+body{
+    background-color: var(--bg-color);
+}
+
+:root{
+    --primary-color: #3c9a9f;
+    --secondary-color: #e0eeef;
+    --white-color: #fff;
+    --bg-color: #73c2cb;
+}
+
+.container {
+    max-width: 142rem;
+    /* height: 100vh; */
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-two--cols {
+    grid-template-columns: 30% 70%;
+}
+
+.center-div{
+    display: grid;
+    place-items: center;
+    background-color: #9fdbe2;
+    /* padding: 4rem; */
+}
+
+.section-login {
+    background-color: var(--white-color);
+    padding: 4.2rem 2rem;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+
+
+    & a{
+        display: block;
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        margin-top: 1rem;
+    }
+}
+
+.login-heading {
+    text-align: center;
+
+    & h1 {
+        font-family: 4.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        margin: 2rem 0 ;
+        color: var(--primary-color);
+    }
+
+    & img{
+        width: 30%;
+    }
+}
+
+.main-form{
+    text-align: center;
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+
+input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    border: 1px solid var(--primary-color);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 0.1rem solid var(--primary-color);
+}
+
+::placeholder {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+.btn{
+    width: 88%;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+
+.section-ecare--image{
+    text-align: center;
+}
+
+.ecare-image h1{
+    font-size: 4.8rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    color: var(--white-color);
+}
+
+figure img{
+    width: 70%;
+}

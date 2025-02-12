@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Layout in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Urbanist", serif;
+            background-color: hsl(0, 0%, 94%);
+            display: grid;
+            place-items: center;
+        }
+
+        .hero-section {
+            width: 60%;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            word-spacing: 0.5px;
+        }
+
+        P {
+            column-count: 3;
+            column-rule: 3px solid rgb(207, 148, 148);
+            /* column-rule-color: green;
+            column-rule-style: dotted;
+            column-rule-width: 2px; */
+            column-gap: 50px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>Column Layout</h2>
+    <ol>
+        <li>column-count</li>
+        <li>column-gap</li>
+        <li>column-rule</li>
+        <li>column-fill</li>
+    </ol> -->
+    <section class="hero-section">
+        <br>
+        <h1>Best CSS Course Ever</h1>
+        <br>
+        <p>
+            Discover a world of possibilities with Thapa Technical comprehensive CSS Course. Dive into over 50
+            real-world interview questions to boost your job prospects. Unlock the secrets of CSS with 30+ invaluable
+            tips and tricks. Engage in dynamic learning with our animated powerpoint presentations. Showcase your
+            creativity with 10+ captivating animation projects. Discover a world of possibilities with Thapa Technical
+            comprehensive CSS Course. Dive into over 50 real-world interview questions to boost your job prospects.
+            Unlock the secrets of CSS with 30+ invaluable tips and tricks. Engage in dynamic learning with our animated
+            powerpoint presentations. Showcase your creativity with 10+ captivating animation projects.
+        </p>
+    </section>
+</body>
+
+</html>

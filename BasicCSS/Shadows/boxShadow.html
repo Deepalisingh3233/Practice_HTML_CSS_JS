@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #191717;
+            display: grid;
+            place-items: center;
+        }
+        .shadow{
+            width: 250px;
+            height: 250px;
+            padding: 40px;
+            background-color: rgb(174, 68, 90);
+            border-radius: 50%;
+            box-shadow: 20px 10px 30px 40px #ffb000;
+            /* horizontal vertical blur spread */
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow"></div>
+</body>
+</html>

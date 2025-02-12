@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner" id="home">
+
+        <div class="img-sidebar">
+            <img src="./Images/Deepali.JPEG" alt="Image of Deepali Singh">
+        </div>
+        <div class="content-box">
+            <h5 class="logoText">
+                My Portfolio
+            </h5>
+            <div>
+            <h4><span>Hello</span>I am </h4>
+            <h2>Deepali Singh</h2>
+            <h4>I am a Quality Assurance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum praesentium amet sint qui quo vero consequuntur ea reiciendis officiis numquam sunt et aliquam consequatur est minima magni voluptatem, aliquid laudantium!
+            Et voluptates omnis earum facilis reiciendis nostrum eos quas. Molestiae, alias. Maiores porro, eos quis nisi possimus eligendi nihil iste dolor, non magnam dolore quasi adipisci repellendus illo ea dolorum.</p>
+            <a href="#" class="btn">About Me</a>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

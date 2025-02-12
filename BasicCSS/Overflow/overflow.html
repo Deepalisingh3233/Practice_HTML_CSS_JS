@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+        }
+        h1{
+            font-size: 44px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        .overflow-div{
+            width: 600px;
+            height: 300px;
+            border: 3px solid gray;
+            padding: 10px;
+            box-shadow: 2px 2px 2px 1px rgb(54, 52, 52);
+            /* overflow: visible; */
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow-y: scroll; */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Overflow in CSS</h2>
+    <ol>
+        <li>Overflow: Visible (Default)</li>
+        <li>Overflow: Scroll</li>
+        <li>Overflow: Hidden</li>
+        <li>Overflow: Auto</li>
+    </ol> -->
+    <h1 id="main-heading">CSS Overflow</h1>
+    <hr>
+    <br>
+    <section>
+        <div class="overflow-div">
+            <p>
+                Discover a world of possibilities with Thapa Technical comprehensive CSS Course. Dive into over 50 real-world interview questions to boost your job prospects. Unlock the secrets of CSS with 30+ invaluable tips and tricks. Engage in dynamic learning with our animated powerpoint presentations. Showcase your creativity with 10+ captivating animation projects. Discover a world of possibilities with Thapa Technical comprehensive CSS Course. Dive into over 50 real-world interview questions to boost your job prospects. Unlock the secrets of CSS with 30+ invaluable tips and tricks. Engage in dynamic learning with our animated powerpoint presentations. Showcase your creativity with 10+ captivating animation projects.
+            </p>
+        </div>
+        <br>
+        <!-- <div class="overflow-div-2">
+            <p>
+                Discover a world of possibilities with Thapa Technical comprehensive CSS Course. Dive into over 50 real-world interview questions to boost your job prospects. Unlock the secrets of CSS with 30+ invaluable tips and tricks. Engage in dynamic learning with our animated powerpoint presentations. Showcase your creativity with 10+ captivating animation projects. Discover a world of possibilities with Thapa Technical comprehensive CSS Course. Dive into over 50 real-world interview questions to boost your job prospects. Unlock the secrets of CSS with 30+ invaluable tips and tricks. Engage in dynamic learning with our animated powerpoint presentations. Showcase your creativity with 10+ captivating animation projects.
+            </p>
+        </div> -->
+    </section>
+</body>
+</html>

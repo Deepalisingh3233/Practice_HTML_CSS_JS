@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Basic HTML</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@400&display=swap');
+        html{
+        font-family: "Playwrite AU SA", serif;
+        scroll-behavior: smooth;
+        background-color: rgb(238, 234, 234);
+        }
+        img{
+            max-width: 250px;
+            box-shadow: rgb(169, 178, 185);
+            border-radius: 8px;
+        }
+        li{
+            text-transform: capitalize;
+        }
+        table{
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,tr,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        video{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <p>Vinod Bahadur Thapa aka ThapaTechnical is a web developer and Youtuber. Thapatechnical want to help others by providing free videos on Web Development and Schools/University important topics.
+    <br/> <hr />
+    This website is all about Website Development, Technical, Tips and Tricks, Designs Principle, Source Code sales and Programming videos in the Hindi Language.</p> -->
+    <a href="#notes"> Click here to get the download link..</a>
+
+    <h1>Paragraph tags with basic HTML Tags</h1>
+    <p>Vinod Bahadur Thapa aka <strong>ThapaTechnical</strong> is a web <em>developer</em> and Youtuber. <u>Thapatechnical</u> want to help others by providing <s>free videos</s> on Web Development and Schools/University important topics.This website is all about Website Development, Technical, Tips and Tricks, Designs Principle, Source Code sales and Programming videos in the Hindi Language.</p>
+    
+    <h1>Subscript tag</h1>
+    <p>H<sub>2</sub>O</p>
+    
+    <h1>Superscript tag</h1>
+    <p>e=mc<sup>2</sup></p>
+    
+    <h1>Pre Tag</h1>
+    <pre>
+        To, 
+            The Principle
+            XYZ
+            Lucknow-208022
+    </pre>
+   
+    <h1>KBD Tag - Keyboard tag</h1>
+    <p>Press -> <kbd>Ctrl+</kbd><kbd>S</kbd></p>
+
+    <p>Highlight <mark>Text</mark></p>
+    <p>This is the <small>small</small> tag</p>
+    <p>This is the <del>del</del> tag demo.</p>
+    
+    <h1>Inline CSS</h1>
+    <p style="color:blue">
+        This is the inline css demo. Inline style is one of the way to style HTML content
+    </p>
+    
+    <h1>Anchor tag</h1>
+    <a href="https://devui-ecare.mightcode.com/" target="_blank">Click Here</a><br/>
+    <a href="./BEST_HTML_COURSE_THAPA.zip" id="notes" download title="Download HTML Notes">Click to download the notes</a> <br/>
+    <a href="mailto:deepali@unicodesystems.info">Send email</a><br/>
+    <a href="tel:+917398848458">Call us..</a>
+
+    <h1>HTM Entities</h1>
+    <p>Named Entity, Hexadecimal Numeric Reference, Decimal Numeric Reference</p>
+    <p> &hearts; &lt; &dollar; &copy; &reg; &trade; &quot; &amp; &lt; &gt; &apos; &nbsp; &hearts;</p>
+
+    <h1>Image Tag</h1>
+    <a href="https://thapatechnical.shop/courses/best-html-course" target="_blank">
+    <img 
+        src="./Images/image.jpg" 
+        alt="House Image" 
+        width="100%" 
+        height="auto" 
+        title="Guest House" 
+        loading="lazy">
+    </a>
+
+    <br/>
+
+    <img 
+        src="./Images/GH3.jpeg" 
+        alt="Get the source code link"
+        usemap="#maps"
+        width="250"
+        height="150"
+    />
+    <!-- shape= react, circle, react -->
+    <map name="maps">
+        <area 
+        shape="react" 
+        coords="0,0,125,150" 
+        href="https://www.thapatechnical.com/2024/02/best-html-complete-course-by-thapa.html" target="_blank" 
+        alt="Notes download link">
+    </map>
+        
+    <h1>Figure Tag</h1>
+    <figure>
+        <img src="./Images/image.jpg" alt="">
+        <figcaption>Books the ticket now!</figcaption>
+    </figure>
+
+    <h1>List Tag</h1>
+    <h2>Ordered List</h2>
+    <h3>decimal, lower-alpha, upper-alpha,lower-roman, upper-roman</h3>
+    <ol start ="3" type="A"> <!--style="list-style-type: lower-alpha;""-->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <h2>Unordered List</h2>
+    <h3>disc, circle, square, none</h3>
+    <ul type = "square">  <!--style="list-style-type: square;-->
+
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h1>Nested List</h1>
+    <ul>
+        <li>Fruits
+            <ol>
+                <li>Banana</li>
+                <li>Apple
+                    <ul>
+                        <li>Red</li>
+                        <li>Green</li>
+                    </ul>
+                </li>
+                <li>Pears</li>
+            </ol>
+        </li>
+        <li>Vegetables</li>
+        <li>Meats</li>
+    </ul>
+
+    <h1>Horizontal Menu Bar</h1>
+    <ul style="list-style-type: none; display: flex; gap: 15px;">
+        <li><a href="#notes">Home</a></li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+
+    <h1>Table Tag</h1>
+    <table> <!--border="1" Deprecated-->
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+        </thead>            
+        <tbody>
+            <tr>
+                <td>Vinod</td>
+                <td>Vinod@123</td>
+            </tr>
+            <tr>
+                <td>Abhay</td>
+                <td>Abhay@123</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Count:2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <h1>Time Table using Table Tag</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">
+                    Time Table
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hours</td>
+                <td>Mon</td>
+                <td>Tues</td>
+                <td>Wed</td>
+                <td>Thurs</td>
+                <td>Fri</td>
+                <td>Sat</td>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td colspan="6">  Lunch </td>
+            </tr>
+            <tr>
+                <td>SST</td>
+                <td>SST</td>
+                <td>SST</td>
+                <td>SST</td>
+                <td>SST</td>
+                <td rowspan="2">Games</td>
+            </tr>
+            <tr>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>iframe Tag</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ccq_nLHneE?si=aATwxjvVDWGGVMdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe 
+        src="https://www.wikipedia.org/" 
+        frameborder="0" 
+        width="100%" 
+        height="500">
+    </iframe>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9237047861675!2d80.95706101029751!3d26.905916360286508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd4e523463c1%3A0x14adf97170ee23e7!2sUnicode%20Systems%20-%20ERP%20%26%20CRM%20Experts%20%7C%20Salesforce%20Partner%20%7C%20Software%20and%20Mobile%20apps%20Development%20Company%20in%20Lucknow.!5e0!3m2!1sen!2sin!4v1737373146904!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>Audio Tag</h1>
+    <h3>controls, autoplay, loop, preload, poster</h3>
+    <p>Supported format</p>
+    <pre>
+        mp3 -> audio/mpeg
+        WAV -> audio/web
+        Ogg -> audio/ogg
+    </pre>
+    <audio controls autoplay muted>
+        <source src="" type="audio/wav"/>
+        <source src="" type=""/>
+        your browser is not supported.
+    </audio>
+
+    <h1>Video Tag</h1>
+    <video controls muted loop poster="./Images/image.jpg" width="500">
+        <source src="./Video/billing admin.webm" type="video/webm"/>
+        <source src="" type=""/>
+        your browser is not supported.
+    </video>
+
+    <h1>HTML Form Tag</h1>
+    <form action="">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username"/>
+        </div>
+        <div>
+            <label for="email">Enter your mail:</label>
+            <input type="email" 
+                id="email" 
+                placeholder="Enter your email" 
+                name="email" 
+                required
+                size="20"
+                value="abc@mightcode.com"
+                pattern="[a-z0-9._%+-]"
+                readonly
+                disabled
+                autocomplete="off"/>
+        </div>
+        <div>
+            <label for="textarea">Message</label>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" name="" id="" value="submit"/>
+    </form>
+    <br><hr>
+    <h1>HTML Form</h1>
+    <form>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password"/>
+        </div>
+        <div>
+            <label for="number">Maximum Subject:</label>
+            <input type="number" id="number" max="5" min="1" value="1"/>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="" value="male"/> Male
+            <input type="radio" name="gender" id="" value="female"/> Female
+        </div>
+        <div>
+            <label for="hobbies">Fav hobbies:</label>
+            <input type="checkbox" name="interest" id="" value="music"/> Music
+            <input type="checkbox" name="interest" id="" value="sports"/> Sports
+        </div>
+        <div>
+            <label for="country">Fav Country: </label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="Nepal">Nepal</option>
+            </select>
+        </div>
+        <div>
+            <label for="country">Select a Country</label>
+            <input type="text" list="countries">
+            <datalist id="countries">
+                <option value="USA"></option>
+                <option value="INDIA"></option>
+                <option value="NEPAL"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="comment">Message Us: </label>
+            <textarea 
+                name="comment" 
+                rows="4"
+                cols="50"
+                placeholder="Enter your comment"
+                id=""></textarea>
+        </div>
+        <div>
+            <label for="file">Select File: </label>
+            <input type="file" name="fileUpload" id=""/>
+        </div>
+        <input type="button" value="Submit">
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+        <h1>Welcome to <span style="color: red;">Our website!</span></h1>
+        <p>This is the description of the our services</p>
+    </div>
+
+    <h1>Advance attributes and Tags of form</h1>
+    <form action="#">
+        <div>
+            <label for="range">Range: </label>
+            <input type="range" name="volume" id="" min="0" max="100" value="50">
+        </div>
+        <div>
+            <label for="birthdate">Birthdate: </label>
+            <input type="date" name="birthdate" id="">
+        </div>
+        <div>
+            <label for="appointmentTime">Appointment Time: </label>
+            <input type="time" name="appointmentTime" id="">
+        </div>
+        <div>
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="">
+        </div>
+        <div>
+            <label for="url">URL: </label>
+            <input type="url" name="url" id="" placeholder="Enter URL">
+        </div>
+        <div>
+            <label for="searchQuery">Search Query: </label>
+            <input type="search" name="search" id="" placeholder="Search..">
+        </div>
+        <div>
+            <label for="expiryDate">Month & Year: </label>
+            <input type="month" name="expiryDate" id="">
+        </div>
+        <div>
+            <label for="vacationWeek">Vacation Week: </label>
+            <input type="week" name="vacationWeek" id="">
+        </div>
+    </form>
+<h1>Fieldset</h1>
+    <form action="">
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="">
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="">
+            </div>
+            <input type="button" value="Submit">
+        </fieldset>
+    </form>
+    <h1>Semantic HTML tags</h1>
+    <p>header,nav,section,aside,article,footer</p>
+</body>
+</html>

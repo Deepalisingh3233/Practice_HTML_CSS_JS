@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Positions in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 5rem 10rem;
+        }
+
+        #main-heading {
+            color: #1e1403;
+            text-align: left;
+            margin-bottom: 30;
+        }
+
+        .parent-div {
+            width: 800px;
+            height: 600px;
+            color: #fff;
+            background: linear-gradient(to right, #514a9d, #24c6dc  );
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            border-radius: 15px;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right, #93edc7, #1cd8d2);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            /* to make the text center   */
+            display: grid;
+            place-items: center;
+            font-size: 32px;
+            color: #003180;
+        }
+        .parent-div{
+            position: relative;
+            /* margin-left: 200px; */
+            left: 200px;
+        }
+        .child{
+            position: absolute;
+        }
+        .child-2{
+            top: 0;
+            right: 0;
+        }
+        .child-3{
+            bottom: 0;
+            left: 0;
+        }
+        .child-4{
+            bottom: 0;
+            right: 0;
+        }
+        .child-5{
+            /* left: 350px;
+            bottom: 250px; */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Positions in CSS</h1>
+    <ol>
+        <li>Relative</li>
+        <li>Absolute(left,right)</li>
+        <li>Static</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol> -->
+    <h1 id="main-heading">CSS Positions</h1>
+        <section class="parent-div">
+            <div class="child child-1">child 1</div>
+            <div class="child child-2">child 2</div>
+            <div class="child child-3">child 3</div>
+            <div class="child child-4">child 4</div>
+            <div class="child child-5">child 5</div>
+        </section>
+</body>
+
+</html>

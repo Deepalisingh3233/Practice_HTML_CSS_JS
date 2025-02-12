@@ -1,0 +1,42 @@
+h1{
+    color: #ff3368;
+}
+.para{
+    color: rgb(103, 143, 43);
+}
+#btn{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* #a:hover */
+#btn:hover{
+    background-color: black;
+}
+h1:hover{
+    color: blue;
+    /* color: rgb(red, green, blue);
+    color: rgba(red, green, blue, alpha); alpha 0 -1
+    color: hsl(hue, saturation, lightness);
+    color: hsla(hue, saturation, lightness, alpha); */
+}
+/* h1{
+    color: rgba(255, 00, 00, 0);
+    color: transparent;
+} */
+/* RGB -> RED GREEN BLUE
+RED -> #FF 00 00
+        255, 0, 0
+
+GREEN -> #00 FF 00
+        0, 255, 0
+
+BLUE -> #00 00 FF 
+        0, 0, 255 */
+
+.hero-section{
+    color: blue;
+}
+p{
+    color: currentColor;
+}

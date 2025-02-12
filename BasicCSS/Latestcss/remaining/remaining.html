@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remaining CSS Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --main-color: #0062ff;
+            --supporting-color: #080a0c;
+            --font-color: #fff;
+            --bg-color: #080a0c;
+            --btn-bg-color: #fff;
+            --timepass-color: red;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            height: 100vh;
+        }
+
+        .container {
+            height: 100vh;
+            max-width: 1320px;
+            padding: 64px 0;
+            margin: 0 auto;
+            display: grid;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            align-items: center;
+            gap: 6.4rem;
+            padding-left: 50px;
+        }
+
+        .grid-two-column {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* .hero-content h1 {
+            text-align: left;
+            font-size: 54px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 2rem 0 4rem 0;
+        } */
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+        .hero-content a {
+            color: var(--font-color);
+        }
+
+        .hero-content a:link {
+            background-color: var(--bg-color);
+            border: 2px solid var(--btn-bg-color);
+            display: inline-block;
+            padding: 10px 32px;
+            text-transform: capitalize;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1 {
+            /* border: 5px solid red; */
+            /* border-inline: 5px solid yellow; */
+            border-block: 5px solid red;
+        }
+
+        /* CSS Nesting */
+
+        .hero-content {
+           & h1 {
+                text-align: left;
+                font-size: 44px;
+                writing-mode: vertical-lr;
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                /* &::before{
+                    content: "*";
+                } */
+            }
+
+           & p {
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin: 2rem 0 6rem 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid grid-two-column">
+                <div class="hero-content">
+                    <h1>World Best Course</h1>
+                    <p>
+                        Unleash your web design potential with the best CSS Course on the internet! Elevate your skills,
+                        create stunning websites, and transform your career. Join us today and embark on a CSS journey
+                        like never before.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=MSICFljRcb4" target="_blank">Watch Now</a>
+                </div>
+                <div class="hero-image">
+                    <figure>
+                        <img src="../../images/hero.png" alt="Headphone with black background" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

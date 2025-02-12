@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+            font-family: "Urbanist", serif;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            background-color: hsl(0, 0%, 96%);
+        }
+        #main-heading{
+            font-size: 6rem;
+            color: #1e1403;
+            margin: 3rem 0;
+        }
+
+        .flex-container{
+            width: 70%;
+            /* height: 480px; */
+            height: auto;
+            padding: 50px 0;
+            margin: 10px auto;
+            box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px, rgb(51, 51, 51)0 0 0 3px;
+            background: linear-gradient(to right, #514a9d, #24c6dc);
+            color: #fff;
+
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            justify-content: center;
+            /* align-items: center; */
+            gap: 20px;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        .item{
+            /* width: 100px; */
+            min-width: 200px;
+            height: 100px;
+            /* aspect-ratio: 1; */
+            box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px, rgb(51, 51, 51)0 0 0 3px;
+            background: linear-gradient(to right, #47e28d, #c1fadd);
+            font-size: 20px;
+            flex: 1;
+        }
+
+        .item-2{
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+            /* align-self: center; */
+        }
+
+        .item-3{
+            /* flex-basis: 200px; */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">CSS Flexbox (Flexible Box Layout)</h1>
+    <hr>
+    <br>
+    <section class="flex-container">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+    </section>
+</body>
+</html>

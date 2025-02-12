@@ -1,0 +1,37 @@
+.form{
+    height: 500px;
+    width: 350px;
+    margin-left: 450px;
+    text-align: center;
+}
+
+.main{
+    height: 400px;
+    width: 350px;
+    border: 1 px solid red;
+    /* display: flex; */
+}
+.heading{
+    text-align: center;
+}
+.form-data{
+    /* text-align: center; */
+}
+.label{
+    padding: 0px;
+    margin: 0px;
+}
+.login{
+    border-radius: 8px;
+    padding: 2px;
+}
+.password{
+    border-radius: 8px;
+    padding: 2px;
+}
+.btn{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 80px;
+    border-radius: 5px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px 100px;
+            background-color: hsl(0, 0%, 94%);
+        }
+
+        #main-heading {
+            color: #1e1403;
+            text-align: left;
+            font-size: 64px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            width: 500px;
+            /* margin: 0 auto; */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            letter-spacing: 1.5;
+            background: linear-gradient(to right, #182848, #4b6cb7);
+            box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+            border-radius: 5px;
+            color: #fff;
+            padding: 20px 10px;
+            margin-bottom: 20px;
+            
+        }
+
+        a {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            background: linear-gradient(to right, #182848, #4b6cb7);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            /* height, width is not working on inline elements */
+            /* width: 300px;
+            height: 400px; */
+            padding: 15px 30px;
+            margin-top: 30px; /*Not working on inline elements*/
+            margin-right: 30px;
+            display: inline-block;
+            /* display: none; */
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>Display in CSS</h2>
+    <ul>
+        <li>Block-Level Element (Vertical Alignment Ex. H1, p etc..)</li>
+        <li>Inline Element (span, anchor)</li>
+        <li>Inline-Block Element</li>
+    </ul> -->
+    <section>
+        <h1 id="main-heading">CSS Display(Box Types)</h1>
+        <div>
+            <p>This is Block-level Element.</p>
+            <p>This is Block-level Element.</p>
+            <a href="#">Inline Level Element</a>
+            <a href="#">Register Now</a>
+            <!-- <br/> -->
+            <a class="inline-block-elem" href="#">Inline level element</a>
+            <a class="inline-block-elem" href="#">Register Now </a>
+        </div>
+    </section>
+</body>
+
+</html>

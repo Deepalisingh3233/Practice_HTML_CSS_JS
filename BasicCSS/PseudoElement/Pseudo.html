@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Jost";
+        }
+
+        body {
+            background-color: #080a0c;
+            color: azure;
+            height: 100vh;
+        }
+
+        .container {
+            height: 100vh;
+            max-width: 1320px;
+            padding: 64px 0;
+            margin: 0 auto;
+            display: grid;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            align-items: center;
+            gap: 64px;
+        }
+
+        .grid-two-column {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            text-align: left;
+            position: relative;
+            display: inline-block;
+            position: relative;
+        }
+
+
+        .hero-content p {
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 20px 0 40px 0;
+        }
+
+        .hero-content p::first-letter{
+            font-size: 44px;
+            color: #ae445a;
+            font-weight: bold;
+        }
+
+        .hero-content p::first-line{
+            text-decoration: underline;
+        }
+
+        .hero-content p::selection{
+            background-color: rgba(255, 204, 112, 0.5);
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        a {
+            background-color: transparent;
+            display: inline-block;
+            padding: 12px 32px;
+            text-decoration: none;
+            border-radius: 05px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid #fff;
+            color: #fff;
+            width: 200px;
+            text-align: center;
+
+            /*? TRANSITION CODE STARTS HERE  */
+        }
+
+        .hero-content h1::before {
+            /* content: "Deepali Singh"; */
+            content: "\f121";
+            font-family: "Font Awesome 6 Free";
+            position: absolute;
+            top: -10px;
+            font-size: 18px;
+            letter-spacing: 8px;
+            color: rgb(255, 204, 112);
+        }
+
+        .hero-content h1::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+            border: 2px solid #ae445a;
+            width: 65%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>Pseudo Elements in CSS</h2>
+    <ol>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::first-letter</li>
+        <li>::first-line</li>
+        <li>::selection</li>
+        <li>::placeholder</li>
+    </ol> -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid grid-two-column">
+                <div class="hero-content">
+                    <h1>Best CSS Course Ever</h1>
+                    <p>
+                        Enjoy award-winning stereo beats with wireless listening freedom and sleek, streamlined with
+                        premium padded and delivering first-rate playback.
+                    </p>
+                    <a href="#">Listen Now</a>
+                </div>
+                <figure>
+                    <img src="../images/css.png" alt="Thapa Technical">
+                </figure>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

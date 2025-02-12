@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@300&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @font-face {
+            font-family: deepaliFont;
+            src: url('./Font/The\ Diplomat\ Signature\ Regular.otf');
+        }
+
+        body{
+            background-color: hsl(0, 0%, 94%);
+            display: grid;
+            place-items: center;
+        }
+        .hero-section{
+            width: 50%;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: "Urbanist", sans-serif;
+            font-family: "deepaliFont","Urbanist"; /*Fallback Fonts*/
+            font-size: 36px;
+            font-weight: 700;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+        p{
+            font-family: "Urbanist", serif;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        a{
+            font-family: "Urbanist", serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section">
+        <br />
+        <h1>Best CSS Course Ever Created</h1>
+        <p>
+            Thapa Technical is all about Website Development, Technical, Tips and Tricks, Designs Principle and Programming videos in the Hindi Language. At Thapa Technical, we cover a wide range of website development languages such as HTML, CSS, JavaScript, React, Node, Express, MongoDB, Next.js, and more. We aim to make these topics easily accessible and understandable for everyone, regardless of your level of experience.
+        </p>
+        <a href="#" target="_blank"><button>Subscribe</button></a>
+    </section>
+</body>
+
+</html>
