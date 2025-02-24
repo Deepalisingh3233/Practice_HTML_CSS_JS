@@ -22,7 +22,16 @@
 // result(10,20);
 
 //! Anonymous function
-var result = function (a, b) {
-    console.log(a + b);
-}
-result(10, 20);
+// var result = function (a, b) {
+//     console.log(a + b);
+// }
+// result(10, 20);
+
+//! IIFE
+
+var result = (function (a, b) {
+    console.log(a+b);
+    return a+b
+})(5, 10);
+
+console.log("Sum of two number is: ",result);
