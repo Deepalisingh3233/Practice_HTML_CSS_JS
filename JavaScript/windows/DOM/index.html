@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        let parent = document
+        let bodyElement = document.body
+        let headElement = document.head
+
+        // let bodyChild = bodyElement.childNodes
+        let bodyChild = bodyElement.children
+        let firstChild = bodyElement.firstElementChild
+         
+        // console.log(parent);
+        // console.log(bodyElement);
+        // console.log(headElement);
+        // console.log(bodyChild);
+        // console.log(firstChild);
+        // console.log(bodyElement.firstChild);
+        // console.log(bodyElement.lastElementChild);
+        // console.log(bodyElement.lastChild);
+        
+        console.log(firstChild.nextElementSibling);
+        console.log(firstChild.nextElementSibling.previousElementSibling);
+        console.log(firstChild.nextElementSibling.previousElementSibling.parentElement);
+        
+        
+        
+    </script>
+</body>
+</html>
