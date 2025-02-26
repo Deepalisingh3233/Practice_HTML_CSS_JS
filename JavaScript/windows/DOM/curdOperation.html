@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operations</title>
+  </head>
+  <body>
+    <div>
+      <h1>Simple DOM Todo App</h1>
+      <input type="text" id="inputfield" />
+      <button class="btn">Click Me</button>
+      <div class="todoListElem">
+        <!-- <p id="todoFirst"></p> -->
+      </div>
+    </div>
+
+    <script>
+      let inputElement = document.getElementById("inputfield");
+      let clickBtn = document.querySelector(".btn");
+      let todoFirst = document.getElementById("todoFirst");
+      let todoElem = document.querySelector(".todoListElem");
+
+      const addTodo = () => {
+        console.log(inputElement.value);
+        // todoFirst.textContent = inputElement.value
+        let pElem = document.createElement("p");
+        pElem.textContent = inputElement.value;
+        console.log(pElem);
+        todoElem.append(pElem);
+        inputElement.value = "";
+      };
+
+      clickBtn.addEventListener("click", () => {
+        addTodo();
+      });
+
+      todoElem.addEventListener("click", (event) => {
+        console.log(event.target);
+        let currElem = event.target;
+        currElem.remove();
+      });
+    </script>
+  </body>
+</html>

@@ -12,6 +12,7 @@
             <li>1 node</li>
             <li>2 node</li>
             <li>3 node</li>
+            <!-- <li>4 node</li> -->
             <li>4 node</li>
             <li style="display: none;">5 node</li>
         </ul>
@@ -26,8 +27,36 @@
     <script>
         let findElementById = document.getElementById('heading')
         // let findElementById = document.getElementById('#heading')  //? this is wrong
-        console.log(findElementById);
+
+        let findElementByClass = document.getElementsByClassName("list-of--nodes")
+        // console.log(findElementByClass);
+        // console.log(...findElementByClass);
         
+        // for (const elem of findElementByClass) {
+            // console.log(elem.innerHTML);   
+            // console.log(elem.innerText);   
+            // console.log(elem.textContent);   
+        // }
+        
+        // console.log(findElementById.innerHTML);
+        // console.log(findElementById.innerText);
+        // console.log(findElementById.textContent);
+
+        let getElementByTag = document.getElementsByTagName("li") 
+        // console.log(getElementByTag);
+        // console.log(...getElementByTag);
+        // for (const elem of getElementByTag) {
+            // console.log(elem); 
+        // }
+
+
+        const getElementByQuerySelector = document.querySelector("#heading")
+        // console.log(getElementByQuerySelector);
+        // console.log(getElementByQuerySelector.innerText = "Learn JavaScript");
+        
+        const getElementByQuerySelectorAll = document.querySelectorAll("li")
+        console.log(getElementByQuerySelectorAll);
+        getElementByQuerySelectorAll.forEach((curElem) => console.log(curElem))
     </script>
 </body>
 </html>
