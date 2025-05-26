@@ -55,6 +55,8 @@ nav ul li a {
     width: 70%;
     padding: 12px;
     background-image: url('bg2.png');
+    background-position: center;
+    background-size: cover;
     margin: 20px auto;
     border-radius: 12px;
     -webkit-border-radius: 12px;
