@@ -6,6 +6,8 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -13,15 +15,15 @@
     <header class="bg-gray">
         <nav class="nav-bar">
             <div class="logo">DS.</div>
-            <ul class="navlist">
-                <li><a href="#" class="active navlinks">Home</a></li>
-                <li><a href="#" class="navlinks">MyIntro.</a></li>
-                <li><a href="#" class="navlinks">Services</a></li>
-                <li><a href="#" class="navlinks">Portfolio</a></li>
-                <li><a href="#" class="navlinks">Testimonial</a></li>
-                <li><a href="#" class="primary-btn" >Hire Me</a></li>
+            <ul class="navlist" id="navlist">
+                <li><a href="#home" class="active navlinks">Home</a></li>
+                <li><a href="#intro" class="navlinks">MyIntro.</a></li>
+                <li><a href="#services" class="navlinks">Services</a></li>
+                <li><a href="#portfolio" class="navlinks">Portfolio</a></li>
+                <li><a href="#testimonial" class="navlinks">Testimonial</a></li>
+                <li><a href="#contact" class="primary-btn" >Hire Me</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
@@ -29,7 +31,7 @@
 
     <main>
         <!-- ---Hero Section--- -->
-        <section class="hero-section bg-gray">
+        <section class="hero-section bg-gray" id="home">
             <div class="container">
                 <div class="row-container">
                     <div class="content">
@@ -39,7 +41,7 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id optio ipsum corporis aliquam, modi impedit explicabo inventore quibusdam praesentium voluptatum aliquid, nobis minima porro aut!</p>
                         <div class="actions">
                             <a href="./images/Watch.png" class="primary-btn" download>Download CV</a>
-                            <a href="#" class="primary-btn" data-type="inverted-btn">Contact Me</a>
+                            <a href="#contact" class="primary-btn" data-type="inverted-btn">Contact Me</a>
                         </div>
                     </div>
                     <div class="image-container">
@@ -50,7 +52,7 @@
         </section>
 
         <!-- ---Skills Section--- -->
-         <section class="section bg-light-pink">
+        <section class="section bg-light-pink" id="skills">
             <div class="container">
                 <div class="column-container">
                     <div class="content">
@@ -133,8 +135,245 @@
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <!-- ---About Me Section--- -->
+
+        <section class="section bg-white" id="intro">
+            <div class="container">
+                <div class="row-container">
+                    <div class="image-container" data-type="inverted-image">
+                        <img src="./images/img.png" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>My Intro</h3>
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat suscipit molestias sint! Voluptatibus consequatur aliquid, architecto autem, mollitia, temporibus omnis exercitationem qui eius vel ad.</p>
+                        <ul class="information">
+                            <li class="details">
+                                <i class="fa-solid fa-user fill-dark-pink"></i>
+                                Name &nbsp; &nbsp;:&nbsp; &nbsp; Deepali Singh
+                            </li>
+                            <li class="details">
+                                <i class="fa-solid fa-phone fill-dark-pink"></i>
+                                Phone &nbsp; &nbsp;:&nbsp; &nbsp; 9889898989
+                            </li>
+                            <li class="details">
+                                <i class="fa-solid fa-envelope fill-dark-pink"></i>
+                                Email &nbsp; &nbsp;:&nbsp; &nbsp; deepalisingh@mightcode.com
+                            </li>
+                        </ul>
+                        <h4>My Interest</h4>
+                        <ul class="interest">
+                            <li>
+                                <i class="fa-solid fa-dice-two fill-dark-pink"></i> Ludo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-music fill-dark-pink"></i> Music
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-palette fill-dark-pink"></i> Art
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-map fill-dark-pink"></i> Travel
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-book-open fill-dark-pink"></i> Reading
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---Services Section--- -->
+
+        <section class="section bg-gray" id="services">
+            <div class="container">
+                <div class="column-container">
+                    <div class="content">
+                        <h3>Services</h3>
+                        <h1>What I Offer</h1>
+                    </div>
+                    <div class="grid-card-container">
+                        <div class="card">
+                            <i class="fa-solid fa-file fill-white" data-type="card-icons"></i>
+                            <h4>Manual Testing</h4>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt alias ipsam debitis dolore doloribus, natus sit aliquid.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-lightbulb fill-white" data-type="card-icons"></i>
+                            <h4>Automation Testing</h4>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt alias ipsam debitis dolore doloribus, natus sit aliquid.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-image fill-white" data-type="card-icons"></i>
+                            <h4>API Testing</h4>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt alias ipsam debitis dolore doloribus, natus sit aliquid.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-coins fill-white" data-type="card-icons"></i>
+                            <h4>Load Testing</h4>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt alias ipsam debitis dolore doloribus, natus sit aliquid.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-desktop fill-white" data-type="card-icons"></i>
+                            <h4>API Trailing</h4>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt alias ipsam debitis dolore doloribus, natus sit aliquid.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-ribbon fill-white" data-type="card-icons"></i>
+                            <h4>Test Cases</h4>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt alias ipsam debitis dolore doloribus, natus sit aliquid.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---Portfolio Section--- -->
+
+        <section class="section bg-white" id="portfolio">
+            <div class="container">
+                <div class="column-container">
+                    <div class="content">
+                        <h3>My Portfolio</h3>
+                        <h1>Recent Work</h1>
+                    </div>
+                    <div class="grid-card-container">
+                        <div class="portfolio-card">
+                            <a href="#" class="primary-btn demo">View Project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <a href="#" class="primary-btn demo">View Project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <a href="#" class="primary-btn demo">View Project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <a href="#" class="primary-btn demo">View Project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <a href="#" class="primary-btn demo">View Project</a>
+                        </div>
+                        <div class="portfolio-card">
+                            <a href="#" class="primary-btn demo">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---Work Together Section--- -->
+         <section class="project-section bg-dark-pink">
+            <div class="container">
+                <div class="project-content">
+                    <h2 class="fill-white">Let's work together on your next project</h2>
+                    <p class="fill-light-pink para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit laboriosam corrupti architecto cupiditate voluptatum voluptatibus laudantium quasi sequi vitae, itaque distinctio, aliquid saepe iusto.</p>
+                    <a href="#" class="primary-btn" data-type="white-btn">Contact</a>
+                </div>
+            </div>
          </section>
 
+         <!-- ---Testimonial Section--- -->
+          <section class="section bg-gray" id="testimonial">
+            <div class="container">
+                <div class="column-container">
+                    <div class="content">
+                        <h3>Testimonial</h3>
+                        <h1>My Client Saying</h1>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile-container"></div>
+                                <h4>Sara Khan</h4>
+                                <img src="./images/rating.png" alt="rating">
+                                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi beatae eaque officia earum labore fugit error harum, voluptate consequatur.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- ---Contact Me Section--- -->
+           <section class="section bg-white" id="contact">
+            <div class="container">
+                <div class="column-container">
+                    <div class="content">
+                        <h3>Contact Me</h3>
+                        <h1>Get In Touch</h1>
+                    </div>
+                    <form action="#" class="form">
+                        <input type="text" placeholder="Username" required>
+                        <input type="number" placeholder="Phone Number" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <textarea placeholder="Type your message here" rows="6" required></textarea>
+                        <input type="submit" value="Send Message" class="primary-btn">
+                    </form>
+                </div>
+            </div>
+           </section>
     </main>
+
+    <!-- ---Footer--- -->
+    <footer class="footer-section bg-black">
+        <div class="container">
+            <p class="para fill-white">Copyright &copy;2025 All rights reserved by DS</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
