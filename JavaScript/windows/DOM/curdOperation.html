@@ -16,30 +16,29 @@
     </div>
 
     <script>
-      let inputElement = document.getElementById("inputfield");
-      let clickBtn = document.querySelector(".btn");
-      let todoFirst = document.getElementById("todoFirst");
-      let todoElem = document.querySelector(".todoListElem");
+      let inputEle = document.getElementById('inputfield');
+      let clickBtn = document.querySelector('.btn')
+      let todoElem = document.querySelector('.todoListElem')
+      // let todoFirst = document.getElementById('todoFirst');
 
       const addTodo = () => {
-        console.log(inputElement.value);
-        // todoFirst.textContent = inputElement.value
+        //  todoFirst.textContent = inputEle.value;
         let pElem = document.createElement("p");
-        pElem.textContent = inputElement.value;
-        console.log(pElem);
+        pElem.textContent = inputEle.value;
         todoElem.append(pElem);
-        inputElement.value = "";
-      };
-
-      clickBtn.addEventListener("click", () => {
+        inputEle.value = "";
+      }
+      
+      clickBtn.addEventListener('click', () => {
         addTodo();
       });
 
       todoElem.addEventListener("click", (event) => {
         console.log(event.target);
-        let currElem = event.target;
-        currElem.remove();
-      });
+        let currentEle = event.target;
+        currentEle.remove();
+      })
+      
     </script>
   </body>
 </html>
