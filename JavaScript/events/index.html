@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inline Events</h1>
+    <button onclick="alert('Welcome')">Greeting</button>
+    <button ondblclick="alert('Welcome to JS')">Greeting Again</button>
+    <button onmouseover="alert('Welcome Again')">Greeting</button>
+
+    <h1>Dom Event Handler</h1>
+    <button id="myBtn1">Greeting</button>
+    <button id="myBtn2">Greeting Again</button>
+
+    <h1>addEventListener Event Handler</h1>
+    <button id="myBtn3">Greeting</button>
+    <button id="myBtn4">Greeting Again</button>
+
+    <script>
+        //Dom Event Handler
+        document.getElementById('myBtn1').onclick = () => {
+            alert('Welcome');
+        };
+
+        document.getElementById('myBtn2').onmouseover = function () {
+            alert("Welcome to JS world");
+        }
+
+        //addEventListner
+        // document.getElementById('myBtn3').addEventListener('click', function () {
+            // alert("JavaScript Course");
+        // })
+
+        document.getElementById('myBtn3').addEventListener('click', () => {
+            alert("JavaScript Course");
+        })
+
+        document.getElementById('myBtn4').addEventListener('mouseover', function () {
+            alert("JavaScript Course.");
+        })
+    </script>
+</body>
+</html>
