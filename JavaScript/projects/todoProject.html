@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo List</h1>
+    <br>
+    <form action="">
+        <div>
+            <input type="text" id="inputValue">
+            <button class="btn">Add Todo</button>
+        </div>
+        <section class="todo-list-elem">
+            
+        </section>
+    </form>
+
+    <script>
+        const mainTodoElem = document.querySelector(".todo-list-elem");
+        const inputValue = document.getElementById("inputValue");
+
+        const getTodoListFromLocal = () => {
+            return JSON.parse(localStorage.getItem("youtubeTodoList"));
+        }
+
+        let localTodoLists = getTodoListFromLocal() || [];
+
+        const addTodoDynamicElement = (currEle) => {
+            const divElement = document.createElement("div");
+            divElement.classList.add("main_todo_div");
+            divElement.innerHTML = `<li>${currEle}</li>  <button class="deleteBtn">Delete</button>`;
+            mainTodoElem.append(divElement);
+        }
+
+        const addTodoList = (e) => {
+            e.preventDefault();
+            
+            const todoListValue = inputValue.value.trim();
+
+            inputValue.value = "";
+            
+            if(todoListValue != "" && !localTodoLists.includes(todoListValue)){
+                localTodoLists.push(todoListValue);
+                localTodoLists = [... new Set(localTodoLists)];
+                console.log(localTodoLists);
+                localStorage.setItem("youtubeTodoList", JSON.stringify(localTodoLists))
+            
+
+                addTodoDynamicElement(todoListValue);
+            }
+
+            
+
+
+        }
+
+
+        const showTodoList = () => {
+            console.log(localTodoLists);
+            localTodoLists.forEach((currEle) => {
+                addTodoDynamicElement(currEle);
+            });
+        }
+
+        showTodoList();
+
+        document.querySelector(".btn").addEventListener("click", (e) => {
+            addTodoList(e);
+        })
+    </script>
+</body>
+</html>
