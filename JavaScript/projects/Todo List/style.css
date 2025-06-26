@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5f1b0;
+    color: #255c4a;
+    font-family: "Caveat", cursive;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.input{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#inputValue{
+    padding: 0.5rem 3rem;
+    padding-inline-start: 1rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid #255c4a;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    font-weight: 800;
+    color: #255c4a;
+}
+
+#inputValue:hover{
+    border: 2px solid #255c4a;
+}
+
+button{
+    padding: 0.5rem 1.7rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 2px solid #d5f1b0;
+    background: #255c4a;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #d5f1b0;
+    color: #255c4a;
+    border: 2px solid #255c4a;
+}
+
+.todo-list-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+
+.main_todo_div{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    font-size: 24px;
+    font-weight: 800;
+}

@@ -10,7 +10,7 @@
     <h1>Todo List</h1>
     <br>
     <form action="">
-        <div>
+        <div class="input">
             <input type="text" id="inputValue">
             <button class="btn">Add Todo</button>
         </div>
@@ -25,6 +25,10 @@
 
         const getTodoListFromLocal = () => {
             return JSON.parse(localStorage.getItem("youtubeTodoList"));
+        }
+
+        const addTodoListLocalStorage = (localTodoLists) => {
+            return localStorage.setItem("youtubeTodoList", JSON.stringify(localTodoLists));
         }
 
         let localTodoLists = getTodoListFromLocal() || [];
@@ -47,14 +51,10 @@
                 localTodoLists.push(todoListValue);
                 localTodoLists = [... new Set(localTodoLists)];
                 console.log(localTodoLists);
-                localStorage.setItem("youtubeTodoList", JSON.stringify(localTodoLists))
-            
+                localStorage.setItem("youtubeTodoList", JSON.stringify(localTodoLists));
 
                 addTodoDynamicElement(todoListValue);
             }
-
-            
-
 
         }
 
@@ -68,9 +68,34 @@
 
         showTodoList();
 
-        document.querySelector(".btn").addEventListener("click", (e) => {
+        const removeTodoElem = (e) => {
+            const todoToRemove = e.target;
+            todoListContent = todoToRemove.previousElementSibling.innerText;
+            let parentElem = todoToRemove.parentElement;
+            console.log(todoListContent);
+
+            localTodoLists = localTodoLists.filter((curTodo) => {
+                return curTodo != todoListContent;
+                // return curTodo != todoListContent.toLowerCase();
+            });
+
+            addTodoListLocalStorage(localTodoLists);
+            parentElem.remove();
+
+            console.log(localTodoLists);
+        }
+
+        mainTodoElem.addEventListener("click", (e) => {
+            e.preventDefault();
+            if(e.target.classList.contains("deleteBtn")){
+                removeTodoElem(e);
+            }
+        })
+
+         document.querySelector(".btn").addEventListener("click", (e) => {
             addTodoList(e);
         })
+
     </script>
 </body>
 </html>
