@@ -69,6 +69,9 @@ button:hover{
     flex-direction: column;
     gap: 0.3rem;
     margin-top: 1rem;
+    height: 350px;
+    overflow-y: auto;
+    /* scroll-behavior: smooth; */
 }
 
 .main_todo_div{
