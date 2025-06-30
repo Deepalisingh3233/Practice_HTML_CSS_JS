@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Caveat", cursive;
 }
 
 body{
@@ -14,7 +15,7 @@ body{
     align-items: center;
     background-color: #d5f1b0;
     color: #255c4a;
-    font-family: "Caveat", cursive;
+    /* font-family: "Caveat", cursive; */
 }
 
 h1{
@@ -57,6 +58,8 @@ button{
     background: #255c4a;
     color: #fff;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 button:hover{
