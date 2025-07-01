@@ -35,8 +35,8 @@
 // console.log(dateFromString);
 
 //? 3: new Date(year, month): Creates a Date object with the specified year and month.
-const date1 = new Date(2025, 12);
-console.log(date1);
+// const date1 = new Date(2025, 12);
+// console.log(date1);
 
 //? 4: new Date(year, month, day): Creates a Date object with the specified year, month, and day.
 // const date2 = new Date(2024, 1, 19);
@@ -196,22 +196,30 @@ console.log(date1);
 
 //! 1: Write a function to add a specified number of days to a given date.
 
-const addDaysToDate = (date, extraDay) => {
-    console.log(date);
-    console.log(date.setDate(date.getDate() + extraDay));
-    console.log(new Date(1751587200000));
-    
-}
+// const addDaysToDate = (date, extraDay) => {
+//     // console.log(date);
+//     // console.log(date.setDate(date.getDate() + extraDay));
+//     // console.log(new Date(1751587200000));
 
-// Example usage:
-const date = new Date("2025-06-27");
-const newDate = addDaysToDate(date, 7);
-console.log(newDate);
+//     let updatedDate = date.setDate(date.getDate() + extraDay);
+//     return new Date(updatedDate);
+// }
+
+// // Example usage:
+// const date = new Date("2025-06-27");
+// const newDate = addDaysToDate(date, 7);
+// console.log(newDate);
 // console.log(newDate.toLocaleDateString());
 
 //! Question: Write a function to calculate the difference in days between two given dates.
 
-// // Example usage:
-// const date1 = new Date("2024-02-19");
-// const date2 = new Date("2024-03-01");
-// console.log(getDaysDifference(date1, date2)); // Output: 11 (difference in days)
+const getDaysDifference = (d1, d2) => {
+    let oneDay = 24 * 60 * 60 * 1000;
+    let diff = Math.abs(d1 - d2);
+    return Math.round(diff / oneDay);
+}
+
+// Example usage:
+const date1 = new Date("2024-02-19");
+const date2 = new Date("2024-03-01");
+console.log(getDaysDifference(date1, date2)); // Output: 11 (difference in days)

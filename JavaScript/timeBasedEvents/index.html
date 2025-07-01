@@ -97,6 +97,12 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+      const currentTime = () => {
+        let currTime = new Date().toLocaleTimeString();
+        document.getElementById("clock").innerText = currTime;
+      }
+      currentTime();
+    </script>
   </body>
 </html>
