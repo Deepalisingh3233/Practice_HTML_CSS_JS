@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Inter", sans-serif;
+    background-color: #bae4b1;
+    color: #fff;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.clockHolder{
+    height: auto;
+    width: 500px;
+    background: #1a1717;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.timeHolder {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.timeOptions {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    gap: 0.4rem;
+    font-size: 10px;
+    color: #affaa0;
+}
+
+.mainDiv {
+    width: 100%;
+    text-align: center ;
+    font-size: 4rem;
+    color: #affaa0;
+}
